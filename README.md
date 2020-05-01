@@ -1,6 +1,6 @@
 ## DRI 3D Pilot
 
-The DRI 3D Pilot is a project to investigate ways to support Cultural Heritage Institutions in creating, publishing and aggregating 3D content to Europeana Collections, via the Digital Repository of Ireland Repository, the Europeana National Aggregator for Ireland. The project is part-funded by the European Union within the Europeana Common Culture project.
+The DRI 3D Pilot is a project headed by the [Digital Repository of Ireland](https://www.dri.ie/) (DRI) to investigate ways to support Cultural Heritage Institutions in creating, publishing and aggregating 3D content to Europeana Collections, via the DRI, the Europeana National Aggregator for Ireland. The project is part-funded by the European Union within the Europeana Common Culture project.
 
 ### Introduction
 
@@ -47,3 +47,7 @@ Once completed it will be possible to aggregate the models to Europeana by putti
 In order to ensure that the 3D object can be rendered and interacted with in a browser environment, an embedded version would be more appropriate.
 
 The [Europeana Publishing Guide](https://pro.europeana.eu/post/publication-policy) indicates that any oEmbed compliant player is supported by Europeana Collections. We are thus investigating an oEmbed option which would allow us to send an embeddable 3D model in the edm:isShownBy field of EDM. This may be accompanied by an additional edm:hasView element which gives the url to download the source file, or a link to the source file may be provided in the embeddable viewer.
+
+### 3D Content Providers
+
+DRI is currently working with [Transport Infrastructure Ireland](https://www.tii.ie/) who are providing content for the 3D Pilot. We are interested in working with other Irish institutes who hold 3D content. More information on joining DRI can be found at our [members pages](https://www.dri.ie/membership).
