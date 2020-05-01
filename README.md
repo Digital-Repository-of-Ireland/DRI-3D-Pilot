@@ -8,7 +8,7 @@ The purpose of this project was to research and develop workflows and tools for 
 
 ### Review of 3D Content in Europeana
 
-The 3D pilot set out to investigate methods of preparing and aggregating 3D content to Europeana. This work began with a [Review of 3D material in Europeana].
+The 3D pilot set out to investigate methods of preparing and aggregating 3D content to Europeana. This work began with a [Review of 3D material in Europeana](https://github.com/Digital-Repository-of-Ireland/DRI-3D-Pilot/blob/master/Report%20on%203D%20Content%20in%20Europeana.pdf).
 
 At the time of conducting this review, there were 28,573 records in Europeana Collections tagged as 3D. A large portion of these, however, had broken links and have subsequently been removed from Europeana Collections search results, or were simply mistagged as 3D content. Of the remainder, the most popular format was 3DPDF. This format, although formerly popular, is now poorly supported on most platforms.
 
@@ -28,7 +28,7 @@ Larger point cloud files cannot be displayed as they are in Europeana or other w
 
 Developing custom code gave the benefit of allowing integration with the existing platform and a simpler more automated workflow for aggregation to Europeana.  The quality of the resultant meshes was lower than that obtained by the semi-automated or manual process using other tools, however, and did not produce models that were of sufficient quality for aggregation. We are in the process of writing up these results as recommendations to content providers.
 
-Where the content came in the format of meshes or models this pre-processing step was generally not necessary, although the quality varied by content provider. More detail on the workflows involved were published in [Europeana Tech Insight isseu 14](https://pro.europeana.eu/page/issue-14-3d)
+Where the content came in the format of meshes or models this pre-processing step was generally not necessary, although the quality varied by content provider. More detail on the workflows involved were published in [Europeana Tech Insight issue 14](https://pro.europeana.eu/page/issue-14-3d)
 
 ### Viewers for 3D Content
 
