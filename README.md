@@ -8,7 +8,7 @@ The purpose of this project was to research and develop workflows and tools for 
 
 ### Review of 3D Content in Europeana
 
-The 3D pilot set out to investigate methods of preparing and aggregating 3D content to Europeana. This work began with a review of the 3D material in Europeana (https://docs.google.com/document/d/1BUKLMZL2jcisGW3mw3-GpFyNdpO0kFBWArqU7BMnuiM/edit?usp=sharing).
+The 3D pilot set out to investigate methods of preparing and aggregating 3D content to Europeana. This work began with a [Review of 3D material in Europeana].
 
 At the time of conducting this review, there were 28,573 records in Europeana Collections tagged as 3D. A large portion of these, however, had broken links and have subsequently been removed from Europeana Collections search results, or were simply mistagged as 3D content. Of the remainder, the most popular format was 3DPDF. This format, although formerly popular, is now poorly supported on most platforms.
 
@@ -18,7 +18,7 @@ Only a small proportion of these provided the option to download the model for r
 
 ### 3D Content in Europeana Task Force
 
-The project collaborated closely with the 3D Content in Europeana Task Force [Link](https://pro.europeana.eu/project/3d-content-in-europeana). The initial review formed an input to the Task force's [Final Report][Link](https://pro.europeana.eu/files/Europeana_Professional/Europeana_Network/Europeana_Network_Task_Forces/Final_reports/3D-TF-final%20report.pdf). Other input was provided to the Task Force activities, and the project undertook to implement the recommendations of the Task Force.
+The project collaborated closely with the 3D Content in [Europeana Task Force](https://pro.europeana.eu/project/3d-content-in-europeana). The initial review formed an input to the Task force's [Final Report](https://pro.europeana.eu/files/Europeana_Professional/Europeana_Network/Europeana_Network_Task_Forces/Final_reports/3D-TF-final%20report.pdf). Other input was provided to the Task Force activities, and the project undertook to implement the recommendations of the Task Force.
 
 ### Preprocessing workflows for 3D content
 
@@ -28,7 +28,7 @@ Larger point cloud files cannot be displayed as they are in Europeana or other w
 
 Developing custom code gave the benefit of allowing integration with the existing platform and a simpler more automated workflow for aggregation to Europeana.  The quality of the resultant meshes was lower than that obtained by the semi-automated or manual process using other tools, however, and did not produce models that were of sufficient quality for aggregation. We are in the process of writing up these results as recommendations to content providers.
 
-Where the content came in the format of meshes or models this pre-processing step was generally not necessary, although the quality varied by content provider. More detail on the workflows involved were published in Europeana Tech Insight isseu 14 (https://pro.europeana.eu/page/issue-14-3d)
+Where the content came in the format of meshes or models this pre-processing step was generally not necessary, although the quality varied by content provider. More detail on the workflows involved were published in [Europeana Tech Insight isseu 14](https://pro.europeana.eu/page/issue-14-3d)
 
 ### Viewers for 3D Content
 
@@ -47,34 +47,3 @@ Once completed it will be possible to aggregate the models to Europeana by putti
 In order to ensure that the 3D object can be rendered and interacted with in a browser environment, an embedded version would be more appropriate.
 
 The [Europeana Publishing Guide](https://pro.europeana.eu/post/publication-policy) indicates that any oEmbed compliant player is supported by Europeana Collections. We are thus investigating an oEmbed option which would allow us to send an embeddable 3D model in the edm:isShownBy field of EDM. This may be accompanied by an additional edm:hasView element which gives the url to download the source file, or a link to the source file may be provided in the embeddable viewer.
-
-
-
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Digital-Repository-of-Ireland/DRI-3D-Pilot/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
