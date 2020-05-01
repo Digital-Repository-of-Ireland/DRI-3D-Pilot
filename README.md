@@ -46,7 +46,7 @@ Once completed it will be possible to aggregate the models to Europeana by putti
 
 In order to ensure that the 3D object can be rendered and interacted with in a browser environment, an embedded version would be more appropriate.
 
-The [Europeana Publishing Guide](https://pro.europeana.eu/post/publication-policy) indicates that any oEmbed compliant player is supported by Europeana Collections. We are thus investigating an oEmbed option which would allow us to send an embeddable 3D model in the edm:isShownBy field of EDM. This may be accompanied by an additional edm:hasView element which gives the url to download the source file, or a link to the source file may be provided in the embeddable viewer.
+The [Europeana Publishing Guide](https://pro.europeana.eu/post/publication-policy) indicates that any oEmbed compliant player is supported by Europeana Collections. We are thus investigating an oEmbed option which would allow us to send an embeddable 3D model in the edm:isShownBy field of EDM. This may be accompanied by an additional edm:hasView element which gives the url to download the source file, or a link to the source file may be provided in the embeddable viewer. This will be the next phase of development of this pilot application.
 
 ### 3D Content Providers
 
