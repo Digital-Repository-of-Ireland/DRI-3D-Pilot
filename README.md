@@ -52,3 +52,4 @@ The [Europeana Publishing Guide](https://pro.europeana.eu/post/publication-polic
 
 DRI is currently working with [Transport Infrastructure Ireland](https://www.tii.ie/) who are providing content for the 3D Pilot. We are interested in working with other Irish institutes who hold 3D content. More information on joining DRI can be found at our [membership pages](https://www.dri.ie/membership).
 
+
