@@ -4,7 +4,7 @@ The DRI 3D Pilot is a project headed by the [Digital Repository of Ireland](http
 
 ### Introduction
 
-The purpose of this project was to research and develop workflows and tools for the preparation, ingest and aggregation of 3D Content.
+The purpose of this project i tso research and develop workflows and tools for the preparation, ingest and aggregation of 3D Content.
 
 ### Review of 3D Content in Europeana
 
