@@ -18,7 +18,7 @@ Only a small proportion of these provided the option to download the model for r
 
 ### 3D Content in Europeana Task Force
 
-The project collaborated closely with the 3D Content in [Europeana Task Force](https://pro.europeana.eu/project/3d-content-in-europeana). The initial review formed an input to the Task force's [Final Report](https://pro.europeana.eu/files/Europeana_Professional/Europeana_Network/Europeana_Network_Task_Forces/Final_reports/3D-TF-final%20report.pdf). Other input was provided to the Task Force activities, and the project undertook to implement the recommendations of the Task Force.
+The project collaborated closely with the [3D Content in Europeana Task Force](https://pro.europeana.eu/project/3d-content-in-europeana). The initial review formed an input to the Task force's [Final Report](https://pro.europeana.eu/files/Europeana_Professional/Europeana_Network/Europeana_Network_Task_Forces/Final_reports/3D-TF-final%20report.pdf). Other input was provided to the Task Force activities, and the project undertook to implement the recommendations of the Task Force.
 
 ### Preprocessing workflows for 3D content
 
