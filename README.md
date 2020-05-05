@@ -1,6 +1,6 @@
 ## DRI 3D Pilot
 
-The DRI 3D Pilot is a project headed by [Trinity College Dublin](https://www.tcd.ie/) to investigate ways to support Cultural Heritage Institutions in creating, publishing and aggregating 3D content to Europeana Collections in collaboration with via the [Digital Repository of Ireland](https://www.dri.ie/) (DRI), the Europeana National Aggregator for Ireland. The project is part-funded by the European Union within the Europeana Common Culture project.
+The DRI 3D Pilot is a project headed by [Trinity College Dublin](https://www.tcd.ie/) to investigate ways to support Cultural Heritage Institutions in creating, publishing and aggregating 3D content to Europeana Collections in collaboration with the [Digital Repository of Ireland](https://www.dri.ie/) (DRI), the Europeana National Aggregator for Ireland. The project is part-funded by the European Union within the Europeana Common Culture project.
 
 ### Introduction
 
