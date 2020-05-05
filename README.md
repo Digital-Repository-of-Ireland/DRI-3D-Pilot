@@ -27,7 +27,7 @@ We then investigated the types of 3D content held by Irish Cultural Heritage Ins
 Larger point cloud files cannot be displayed as they are in Europeana or other web-based platforms, but must first have a lightweight mesh generated from the point cloud. We set out to compare a variety of tools to achieve this. The tools included open source tools which could semi-automate the mesh reconstruction process such as CloudCompare and Meshlab, proprietary software such as RealityCapture, as well as open source libraries such as open3D which could be used to develop custom mesh reconstruction code.
 
 
-<img src="https://raw.githubusercontent.com/Digital-Repository-of-Ireland/DRI-3D-Pilot/master/model-2.png" width="200" height="200" /> <img src="https://raw.githubusercontent.com/Digital-Repository-of-Ireland/DRI-3D-Pilot/master/my-mesh.png" width="200" height="200" />
+<img align="center" src="https://raw.githubusercontent.com/Digital-Repository-of-Ireland/DRI-3D-Pilot/master/model-2.png" width="500" height="500" /> <img align="center"  src="https://raw.githubusercontent.com/Digital-Repository-of-Ireland/DRI-3D-Pilot/master/my-mesh.png" width="500" height="500" />
 
 
 
