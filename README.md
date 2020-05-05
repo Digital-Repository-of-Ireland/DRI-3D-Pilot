@@ -24,11 +24,11 @@ The project collaborated closely with the [3D Content in Europeana Task Force](h
 
 We then investigated the types of 3D content held by Irish Cultural Heritage Institutions. It was found that these were a mixture of large point clouds, meshes and models in a variety of file formats. To allow the pilot application to have the most impact we first explored workflows and tools that could be used to process these various file types into formats suitable for aggregation to Europeana.
 
-Larger point cloud files cannot be displayed as they are in Europeana or other web-based platforms, but must first have a lightweight mesh generated from the point cloud. We set out to compare a variety of tools to achieve this. The tools included open source tools which could semi-automate the mesh reconstruction process such as CloudCompare and meshlab, proprietary software such as RealityCapture, as well as open source libraries such as open3D which could be used to develop custom mesh reconstruction code.
+Larger point cloud files cannot be displayed as they are in Europeana or other web-based platforms, but must first have a lightweight mesh generated from the point cloud. We set out to compare a variety of tools to achieve this. The tools included open source tools which could semi-automate the mesh reconstruction process such as CloudCompare and Meshlab, proprietary software such as RealityCapture, as well as open source libraries such as open3D which could be used to develop custom mesh reconstruction code.
 
 Developing custom code gave the benefit of allowing integration with the existing platform and a simpler more automated workflow for aggregation to Europeana.  The quality of the resultant meshes was lower than that obtained by the semi-automated or manual process using other tools, however, and did not produce models that were of sufficient quality for aggregation. We are in the process of writing up these results as recommendations to content providers.
 
-Where the content came in the format of meshes or models this pre-processing step was generally not necessary, although the quality varied by content provider. More detail on the workflows involved were published in [Europeana Tech Insight issue 14](https://pro.europeana.eu/page/issue-14-3d)
+Where the content came in the format of meshes or models this pre-processing step was generally not necessary, although the quality varied by content provider. More detail on the workflows involved were published in [Europeana Tech Insight issue 14](https://pro.europeana.eu/page/issue-14-3d) and some code examples are available [here](https://github.com/Digital-Repository-of-Ireland/DRI-3D-Pilot/raw/master/3D%20Preprocessing%20Workflows.pdf).
 
 ### Viewers for 3D Content
 
