@@ -26,9 +26,11 @@ We then investigated the types of 3D content held by Irish Cultural Heritage Ins
 
 Larger point cloud files cannot be displayed as they are in Europeana or other web-based platforms, but must first have a lightweight mesh generated from the point cloud. We set out to compare a variety of tools to achieve this. The tools included open source tools which could semi-automate the mesh reconstruction process such as CloudCompare and Meshlab, proprietary software such as RealityCapture, as well as open source libraries such as open3D which could be used to develop custom mesh reconstruction code.
 
-![alt text](https://github.com/[mashalahmad]/[DRI-3D-Pilot]/model-2.png?raw=true)
+![alt text](https://github.com/[mashalahmad]/[Digital-Repository-of-Ireland]/[DRI-3D-Pilot]/model-2.png?raw=true)
 
-![alt text](https://github.com/[mashalahmad]/[DRI-3D-Pilot]/my-mesh.png?raw=true)
+![alt text](https://github.com/[mashalahmad]/[Digital-Repository-of-Ireland]/[DRI-3D-Pilot]/my-mesh.png?raw=true)
+
+
 Code snippet to for surface reconstruction with Open3D using Poisson surface reconstruction algorithm is as follow:
 
 ```python
@@ -61,6 +63,7 @@ Of these 3DHop and Smithsonian Voyager only had limited support for input file f
 
 Code snippet for visualising using the 3D Hop is as follows:
 Function for loading the model
+
 ```javascript
 function setup3dhop() { 
 presenter = new Presenter("draw-canvas"); 
