@@ -29,14 +29,16 @@ Larger point cloud files cannot be displayed as they are in Europeana or other w
 ![alt text](https://github.com/[mashalahmad]/[DRI-3D-Pilot]/model-2.png?raw=true)
 
 ![alt text](https://github.com/[mashalahmad]/[DRI-3D-Pilot]/my-mesh.png?raw=true)
+Code snippet to for surface reconstruction with Open3D using Poisson surface reconstruction algorithm is as follow:
+
 ```python
-1. pcd = o3d.io.read_point_cloud("path/to/pointcloud") 
-2. downpcd = pcd.voxel_down_sample(voxel_size=0.03) 
-3.downpcd.estimate_normals(search_param=o3d.geometry.KDTreeSearchParamHybrid(radius=0.271250,max_nn=30))
-4. print('run Poisson surface reconstruction')
-5. mesh, densities = o3d.geometry.TriangleMesh.create_from_point_cloud_poisson(downpcd, depth=10, width=0, scale=1.1, linear_fit=True) 
-6. o3d.visualization.draw_geometries([mesh]) 
-7. o3d.io.write_triangle_mesh("yourmesh.ply",mesh)
+ pcd = o3d.io.read_point_cloud("path/to/pointcloud") 
+ downpcd = pcd.voxel_down_sample(voxel_size=0.03) 
+ downpcd.estimate_normals(search_param=o3d.geometry.KDTreeSearchParamHybrid(radius=0.271250,max_nn=30))
+ print('run Poisson surface reconstruction')
+ mesh, densities = o3d.geometry.TriangleMesh.create_from_point_cloud_poisson(downpcd, depth=10, width=0, scale=1.1, linear_fit=True) 
+ o3d.visualization.draw_geometries([mesh]) 
+ o3d.io.write_triangle_mesh("yourmesh.ply",mesh)
 
 ```
 
@@ -57,6 +59,29 @@ As Sketchfab is a very popular option within the Europeana community, we investi
 
 Of these 3DHop and Smithsonian Voyager only had limited support for input file formats. This was a problem for the pilot as the content was in such a wide variety of formats. It was decided to use the Three JavaScript Library to display these models online. This is now being integrated with the DRI Repository platform and the Europeana aggregation feed.
 
+Code snippet for visualising using the 3D Hop is as follows:
+Function for loading the model
+```javascript
+function setup3dhop() { 
+presenter = new Presenter("draw-canvas"); 
+presenter.setScene({
+         meshes: { "Cage" : { url: "path/to/model" } },
+         modelInstances : { "Model" : { mesh : "Cage" } } 
+   }); 
+}
+```
+and a fucntion to to set the controls on screen (zoom in zoom out etc) :
+
+```javascript
+function actionsToolbar(action) { 
+if(action=='home') presenter.resetTrackball(); 
+else if(action=='zoomin') presenter.zoomIn(); 
+else if(action=='zoomout') presenter.zoomOut();
+else if(action=='light' || action=='light_on') { presenter.enableLightTrackball(!presenter.isLightTrackballEnabled()); lightSwitch();  
+else if(action=='full' || action=='full_on') fullscreenSwitch(); 
+}
+
+```
 Once completed it will be possible to aggregate the models to Europeana by putting the source file url into the edm:isShownBy element in EDM. These source files are rarely, however, renderable within a web browser, and thus they would not provide a very satisfactory user experience.
 
 In order to ensure that the 3D object can be rendered and interacted with in a browser environment, an embedded version would be more appropriate.
