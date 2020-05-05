@@ -63,7 +63,9 @@ As Sketchfab is a very popular option within the Europeana community, we investi
 
 Of these 3DHop and Smithsonian Voyager only had limited support for input file formats. This was a problem for the pilot as the content was in such a wide variety of formats. It was decided to use the Three JavaScript Library to display these models online. This is now being integrated with the DRI Repository platform and the Europeana aggregation feed.
 
-Code snippet for visualising using the 3D Hop is as follows:
+Code snippet for visualising the 3D model with the 3D Hop is as follows:
+
+
 Function for loading the model
 
 ```javascript
