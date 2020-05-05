@@ -26,6 +26,21 @@ We then investigated the types of 3D content held by Irish Cultural Heritage Ins
 
 Larger point cloud files cannot be displayed as they are in Europeana or other web-based platforms, but must first have a lightweight mesh generated from the point cloud. We set out to compare a variety of tools to achieve this. The tools included open source tools which could semi-automate the mesh reconstruction process such as CloudCompare and Meshlab, proprietary software such as RealityCapture, as well as open source libraries such as open3D which could be used to develop custom mesh reconstruction code.
 
+![alt text](https://github.com/[mashalahmad]/[DRI-3D-Pilot]/model-2.png?raw=true)
+
+![alt text](https://github.com/[mashalahmad]/[DRI-3D-Pilot]/my-mesh.png?raw=true)
+```python
+1. pcd = o3d.io.read_point_cloud("path/to/pointcloud") 
+2. downpcd = pcd.voxel_down_sample(voxel_size=0.03) 
+3.downpcd.estimate_normals(search_param=o3d.geometry.KDTreeSearchParamHybrid(radius=0.271250,max_nn=30))
+4. print('run Poisson surface reconstruction')
+5. mesh, densities = o3d.geometry.TriangleMesh.create_from_point_cloud_poisson(downpcd, depth=10, width=0, scale=1.1, linear_fit=True) 
+6. o3d.visualization.draw_geometries([mesh]) 
+7. o3d.io.write_triangle_mesh("yourmesh.ply",mesh)
+
+```
+
+
 Developing custom code gave the benefit of allowing integration with the existing platform and a simpler more automated workflow for aggregation to Europeana.  The quality of the resultant meshes was lower than that obtained by the semi-automated or manual process using other tools, however, and did not produce models that were of sufficient quality for aggregation. We are in the process of writing up these results as recommendations to content providers.
 
 Where the content came in the format of meshes or models this pre-processing step was generally not necessary, although the quality varied by content provider. More detail on the workflows involved were published in [Europeana Tech Insight issue 14](https://pro.europeana.eu/page/issue-14-3d).
