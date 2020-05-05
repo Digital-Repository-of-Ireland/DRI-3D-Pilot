@@ -25,13 +25,13 @@ The project collaborated closely with the [3D Content in Europeana Task Force](h
 We then investigated the types of 3D content held by Irish Cultural Heritage Institutions. It was found that these were a mixture of large point clouds, meshes and models in a variety of file formats. To allow the pilot application to have the most impact we first explored workflows and tools that could be used to process these various file types into formats suitable for aggregation to Europeana.
 
 Larger point cloud files cannot be displayed as they are in Europeana or other web-based platforms, but must first have a lightweight mesh generated from the point cloud. We set out to compare a variety of tools to achieve this. The tools included open source tools which could semi-automate the mesh reconstruction process such as CloudCompare and Meshlab, proprietary software such as RealityCapture, as well as open source libraries such as open3D which could be used to develop custom mesh reconstruction code.
-<figure>
+
 <p align="center">
 <img src="https://raw.githubusercontent.com/Digital-Repository-of-Ireland/DRI-3D-Pilot/master/model-2.png" width="300" height="300" /> <img  src="https://raw.githubusercontent.com/Digital-Repository-of-Ireland/DRI-3D-Pilot/master/my-mesh.png" width="300" height="300" />
 </p>
-  <figcaption>An example of Surface reconstruction of Beheenagh Bridge Kerry with (a)CloudCompare and (b)Open3D  
-</figcaption>
-</figure>
+  <em>An example of Surface reconstruction of Beheenagh Bridge Kerry with (a)CloudCompare and (b)Open3D  
+</em>
+
 
 Code snippet to for surface reconstruction with Open3D using Poisson surface reconstruction algorithm is as follow:
 
