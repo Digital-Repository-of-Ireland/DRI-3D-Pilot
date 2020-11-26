@@ -112,12 +112,15 @@ In order to aggregate the 3D models, The [Europeana Publishing Guide](https://pr
 
 
 Consumer will send an HTTP request like this:
+
 <li>
 https://repository.dri.ie/api/oembed?url=https%3A%2F%2Frepository.dri.ie%2Fcatalog%2Fg732sz11t
-
 </li>
 
+
+
 DRI as oEmbed provider response is as:
+
 
 ```json
   {
