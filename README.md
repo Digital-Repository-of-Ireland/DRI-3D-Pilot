@@ -1,6 +1,6 @@
 ## DRI 3D Pilot
 
-The DRI 3D Pilot is a project headed by the [Digital Repository of Ireland](https://www.dri.ie/) (DRI) to investigate ways to support Cultural Heritage Institutions in creating, publishing and aggregating 3D content to Europeana Collections, via the DRI, the Europeana National Aggregator for Ireland. The project is part-funded by the European Union within the Europeana Common Culture project.
+The DRI 3D Pilot is a project headed by [Trinity College Dublin](https://www.tcd.ie/) to investigate ways to support Cultural Heritage Institutions in creating, publishing and aggregating 3D content to Europeana Collections in collaboration with the [Digital Repository of Ireland](https://www.dri.ie/) (DRI), the Europeana National Aggregator for Ireland. The project is part-funded by the European Union within the Europeana Common Culture project.
 
 ### Introduction
 
@@ -22,18 +22,18 @@ The project collaborated closely with the [3D Content in Europeana Task Force](h
 
 ### Preprocessing workflows for 3D content
 
-We then investigated the types of 3D content held by Irish Cultural Heritage Institutions. It was found that these were a mixture of large point clouds, meshes and models in a variety of file formats. To allow the pilot application to have the most impact we first explored workflows and tools that could be used to process these various file types into formats suitable for aggregation to Europeana.
+The project investigated the types of 3D content held by Irish Cultural Heritage Institutions. It was found that these were a mixture of large point clouds, meshes and models in a variety of file formats. To allow the pilot application to have the most impact we first explored workflows and tools that could be used to process these various file types into formats suitable for aggregation to Europeana.
 
 Larger point cloud files cannot be displayed as they are in Europeana or other web-based platforms, but must first have a lightweight mesh generated from the point cloud. We set out to compare a variety of tools to achieve this. The tools included open source tools which could semi-automate the mesh reconstruction process such as CloudCompare and Meshlab, proprietary software such as RealityCapture, as well as open source libraries such as open3D which could be used to develop custom mesh reconstruction code.
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/Digital-Repository-of-Ireland/DRI-3D-Pilot/master/model-2.png" width="300" height="300" /> <img  src="https://raw.githubusercontent.com/Digital-Repository-of-Ireland/DRI-3D-Pilot/master/my-mesh.png" width="300" height="300" />
 </p>
-  <em>An example of Surface reconstruction of Beheenagh Bridge Kerry with (a)CloudCompare and (b)Open3D  
+  <em>An example of Surface reconstruction of Beheenagh Bridge Kerry with (a)CloudCompare and (b)Open3D (origal pointcloud source Transport Infrastructure Ireland) 
 </em>
 
 
-Code snippet to for surface reconstruction with Open3D using Poisson surface reconstruction algorithm is as follow:
+Code snippet for surface reconstruction with Open3D using Poisson surface reconstruction algorithm is as follows:
 
 ```python
  pcd = o3d.io.read_point_cloud("path/to/pointcloud") 
