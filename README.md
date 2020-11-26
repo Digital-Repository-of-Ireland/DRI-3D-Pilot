@@ -113,20 +113,20 @@ In order to aggregate the 3D models, The [Europeana Publishing Guide](https://pr
 
 Consumer will send an HTTP request like this:
 <li>
-(https://repository.dri.ie/api/oembed?url=https%3A%2F%2Frepository.dri.ie%2Fcatalog%2Fg732sz11t
-)
+https://repository.dri.ie/api/oembed?url=https%3A%2F%2Frepository.dri.ie%2Fcatalog%2Fg732sz11t
+
 </li>
 
 DRI as oEmbed provider response is as:
 
 ```json
   {
-	type: "rich",
-	version: "1.0",
-	title: "Model beenah",
-	provider_name: "DRI: Digital Repository of Ireland",
-	provider_url: "https://repository.dri.ie/",
-	html: " <iframe src = "https://repository.dri.ie/embed3d/sn009x76k/files/hd76s004z" width="1024px" height="1024px"> </iframe> "
+	"type": "rich",
+	"version": "1.0",
+	"title": "Model beenah",
+	"provider_name": "DRI: Digital Repository of Ireland",
+	"provider_url": "https://repository.dri.ie/",
+	"html": " <iframe src = "https://repository.dri.ie/embed3d/sn009x76k/files/hd76s004z" width="1024px" height="1024px"> </iframe> "
    }
 ```
 
