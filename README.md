@@ -95,7 +95,7 @@ else if(action=='full' || action=='full_on') fullscreenSwitch();
 After analysing and comparing the pros and cons of using a commercial hosting platform and self hosted viewer we opted to implement our own viewer , because self hosted viewer comes with advantages like less cost, no limit on size of models, number of models and formats etc. We implemented 3D viewer using Three, a cross browser Javascript library and Application Programming Interface (API) that comes with features of not only creating and designing but also displaying animation, 3D graphics in web browser using WebGL. 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/Digital-Repository-of-Ireland/DRI-3D-Pilot/master/face_shieldmask2.jpeg" width="300" height="600" /> 
+<img src="https://raw.githubusercontent.com/Digital-Repository-of-Ireland/DRI-3D-Pilot/master/face_shieldmask2.jpeg" width="600" height="300" /> 
 </p>
   <em>View of the Face Shield 3D Model as it appears in the DRI Repository 3D viewer (CC-BY 4.0)  
 </em>
