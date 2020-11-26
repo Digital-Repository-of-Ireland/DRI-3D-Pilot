@@ -58,35 +58,29 @@ Based on the recommendations of the 3D Task Force we looked into various options
 As Sketchfab is a very popular option within the Europeana community, we investigated this, but the fees involved make this a less attractive option. For this pilot we eventually opted for a self-hosted 3D viewer as part of the National Aggregator platform. We looked into three possible solutions
 
 - 3DHop
-- Smithsonian VOyager
+- Smithsonian Voyager
 - Three Javascript Library
 
 Of these 3DHop and Smithsonian Voyager only had limited support for input file formats. This was a problem for the pilot as the content was in such a wide variety of formats. It was decided to use the Three JavaScript Library to display these models online. This is now being integrated with the DRI Repository platform and the Europeana aggregation feed.
 
-Code snippet for visualising the 3D model with the 3D Hop is as follows:
-
-
-Function for loading the model
+Code snippet for visualising , loading the 3D model and setting the controls on screen (zoom in zoom out etc) with the 3DHop is as follows:
 
 ```javascript
 function setup3dhop() { 
-presenter = new Presenter("draw-canvas"); 
-presenter.setScene({
-         meshes: { "Cage" : { url: "path/to/model" } },
-         modelInstances : { "Model" : { mesh : "Cage" } } 
-   }); 
-}
-```
-and a fucntion to to set the controls on screen (zoom in zoom out etc) :
+	presenter = new Presenter("draw-canvas"); 
+	presenter.setScene({
+		 meshes: { "Cage" : { url: "path/to/model" } },
+		 modelInstances : { "Model" : { mesh : "Cage" } } 
+	   }); 
+   }
 
-```javascript
-function actionsToolbar(action) { 
-if(action=='home') presenter.resetTrackball(); 
-else if(action=='zoomin') presenter.zoomIn(); 
-else if(action=='zoomout') presenter.zoomOut();
-else if(action=='light' || action=='light_on') { presenter.enableLightTrackball(!presenter.isLightTrackballEnabled()); lightSwitch();  
-else if(action=='full' || action=='full_on') fullscreenSwitch(); 
-}
+   function actionsToolbar(action) { 
+	if(action=='home') presenter.resetTrackball(); 
+	else if(action=='zoomin') presenter.zoomIn(); 
+	else if(action=='zoomout') presenter.zoomOut();
+	else if(action=='light' || action=='light_on') { presenter.enableLightTrackball(!presenter.isLightTrackballEnabled()); lightSwitch();  
+	else if(action=='full' || action=='full_on') fullscreenSwitch(); 
+	}
 
 ```
 
