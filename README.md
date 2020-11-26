@@ -101,10 +101,36 @@ After analysing and comparing the pros and cons of using a commercial hosting pl
 </em>
 
 
-
+<!--
 In order to ensure that the 3D object can be rendered and interacted with in a browser environment, an embedded version would be more appropriate.
 
-The [Europeana Publishing Guide](https://pro.europeana.eu/post/publication-policy) indicates that any oEmbed compliant player is supported by Europeana Collections. We are thus investigating an oEmbed option which would allow us to send an embeddable 3D model in the edm:isShownBy field of EDM. This may be accompanied by an additional edm:hasView element which gives the url to download the source file, or a link to the source file may be provided in the embeddable viewer. This will be the next phase of development of this pilot application.
+The [Europeana Publishing Guide](https://pro.europeana.eu/post/publication-policy) indicates that any oEmbed compliant player is supported by Europeana Collections. We are thus investigating an oEmbed option which would allow us to send an embeddable 3D model in the edm:isShownBy field of EDM. This may be accompanied by an additional edm:hasView element which gives the url to download the source file, or a link to the source file may be provided in the embeddable viewer. This will be the next phase of development of this pilot application. --->
+
+### Embedding and Sharing with Oembed :
+
+In order to aggregate the 3D models, The [Europeana Publishing Guide](https://pro.europeana.eu/post/publication-policy) indicates that any oEmbed compliant player is supported by Europeana Collections. We implemented the [oEmbed API](https://oembed.com/) that allows the embedded representation of contents (like photos , videos, rich) when a user  posts a link to that resource, without having to parse the resource directly. In order to comply with security considerations, we as an oEmbed provider shared the embedded snippet in iframes so that consumers can display embeds without any fear of XSS attacks. We configured the API setting as oembed provider and embeddable content link is shared in edm:isShownBy element of EDM feed.
+
+
+Consumer will send an HTTP request like this:
+<li>
+(https://repository.dri.ie/api/oembed?url=https%3A%2F%2Frepository.dri.ie%2Fcatalog%2Fg732sz11t
+)
+</li>
+
+DRI as oEmbed provider response is as:
+
+```json
+{
+type: "rich",
+version: "1.0",
+title: "Model beenah",
+provider_name: "DRI: Digital Repository of Ireland",
+provider_url: "https://repository.dri.ie/",
+html: " <iframe src = "https://repository.dri.ie/embed3d/sn009x76k/files/hd76s004z" width="1024px" height="1024px"> </iframe> "
+}
+
+```
+
 
 ### 3D Content Providers
 
