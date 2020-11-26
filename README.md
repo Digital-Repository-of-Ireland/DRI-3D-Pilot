@@ -123,7 +123,7 @@ DRI as oEmbed provider response is as:
 	"title": "Model beenah",
 	"provider_name": "DRI: Digital Repository of Ireland",
 	"provider_url": "https://repository.dri.ie/",
-	"html": " <iframe src = "https://repository.dri.ie/embed3d/sn009x76k/files/hd76s004z" width="1024px" height="1024px"> </iframe> "
+	"html": " <iframe src = ""https://repository.dri.ie/embed3d/sn009x76k/files/hd76s004z"" width="1024px" height="1024px"> </iframe> "
    }
 ```
 
