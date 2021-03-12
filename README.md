@@ -86,7 +86,7 @@ function setup3dhop() {
 
 ### Building Self hosted 3D Viewer
 
-After analysing and comparing the pros and cons of using a commercial hosting platform and self hosted viewer we opted to implement our own viewer , because self hosted viewer comes with advantages like less cost, no limit on size of models, number of models and formats etc. We implemented 3D viewer using Three, a cross browser Javascript library and Application Programming Interface (API) that comes with features of not only creating and designing but also displaying animation, 3D graphics in web browser using WebGL. 
+After analysing and comparing the pros and cons of using a commercial hosting platform and self hosted viewer we opted to implement our own viewer , because self hosted viewer comes with advantages like less cost, no limit on size of models, number of models and formats etc. We implemented 3D viewer using Three, a cross browser Javascript library and Application Programming Interface (API) that comes with features of not only creating and designing but also displaying animation, 3D graphics in web browser using WebGL. The code for the 3D viewer is open source and is available [here](https://github.com/Digital-Repository-of-Ireland/DRI-3DViewer).
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/Digital-Repository-of-Ireland/DRI-3D-Pilot/master/face_shieldmask2.jpeg" width="600" height="300" /> 
